@@ -23,7 +23,7 @@ meepachat init       # Set up Postgres, Redis, MinIO, Zitadel via Docker
 meepachat            # Start server → http://localhost:8091
 ```
 
-`meepachat init` pulls Docker images, bootstraps authentication (Zitadel), and writes config to `~/.config/meepa/config.yaml`. Requires Docker.
+`meepachat init` pulls Docker images, bootstraps authentication (Zitadel), and writes config to `~/.meepachat/config.yaml`. Requires Docker.
 
 ## Deploy to a VPS
 
