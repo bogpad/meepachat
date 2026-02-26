@@ -127,10 +127,11 @@ Then access at `http://<your-server-ip>:8091`.
 ## Manage Services
 
 ```bash
-meepachat deps status    # Show service status
-meepachat deps stop      # Stop services
-meepachat deps start     # Restart services
-meepachat deps reset     # Stop and delete all data
+meepachat status         # Show service status
+meepachat stop           # Stop all services
+meepachat restart        # Restart the server
+meepachat logs           # Show infrastructure logs
+meepachat reset          # Reset infrastructure
 ```
 
 ## OpenClaw Integration
@@ -173,7 +174,7 @@ See the [full plugin docs](https://github.com/bogpad/meepa/tree/main/meepachat/i
 ## Uninstall
 
 ```bash
-meepachat deps reset
+meepachat reset --hard   # Stop services and wipe all data
 sudo rm /usr/local/bin/meepachat
 ```
 
