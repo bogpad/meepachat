@@ -1,6 +1,15 @@
-# MeepaChat
+<p align="center">
+    <img src="https://raw.githubusercontent.com/bogpad/meepachat/main/icon-512.png" width="200" alt="MeepaChat" />
+    <br><br>
+    <b>Self-hosted team chat.</b><br>
+    Go + React. Deploy anywhere. Own your data.
+    <br><br>
+    <a href="https://github.com/bogpad/meepachat/releases"><img src="https://img.shields.io/github/v/release/bogpad/meepachat?style=flat-square" alt="Latest Release"></a>
+    <a href="https://github.com/bogpad/meepa/actions/workflows/meepachat-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/bogpad/meepa/meepachat-release.yml?style=flat-square&label=build" alt="Build Status"></a>
+    <a href="https://github.com/bogpad/meepa/blob/main/LICENSE"><img src="https://img.shields.io/github/license/bogpad/meepa?style=flat-square" alt="License"></a>
+</p>
 
-Self-hosted team chat. Go + React + Zitadel auth.
+---
 
 ## Install
 
