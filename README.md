@@ -5,8 +5,8 @@
     Go + React. Deploy anywhere. Own your data.
     <br><br>
     <a href="https://github.com/bogpad/meepachat/releases"><img src="https://img.shields.io/github/v/release/bogpad/meepachat?style=flat-square" alt="Latest Release"></a>
-    <a href="https://github.com/bogpad/meepa/actions/workflows/meepachat-release.yml"><img src="https://img.shields.io/github/actions/workflow/status/bogpad/meepa/meepachat-release.yml?style=flat-square&label=build" alt="Build Status"></a>
-    <a href="https://github.com/bogpad/meepa/blob/main/LICENSE"><img src="https://img.shields.io/github/license/bogpad/meepa?style=flat-square" alt="License"></a>
+    <a href="https://formulae.brew.sh/formula/meepachat"><img src="https://img.shields.io/badge/homebrew-bogpad%2Ftap-orange?style=flat-square" alt="Homebrew"></a>
+    <a href="https://github.com/bogpad/meepachat"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-blue?style=flat-square" alt="Platform"></a>
 </p>
 
 ---
