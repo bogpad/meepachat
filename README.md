@@ -100,7 +100,7 @@ Requires=docker.service
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/meepachat
-Environment=MEEPA_CONFIG_PATH=/root/.config/meepa/config.yaml
+Environment=MEEPA_CONFIG_PATH=/root/.meepachat/config.yaml
 Restart=on-failure
 RestartSec=5
 LimitNOFILE=65536
