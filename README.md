@@ -52,7 +52,7 @@ doctl compute droplet create meepachat \
 
 ```bash
 hcloud server create --name meepachat \
-  --type cx22 --image ubuntu-24.04 \
+  --type cx23 --image ubuntu-24.04 \
   --ssh-key <YOUR_KEY_NAME> \
   --user-data-from-file <(curl -sfL https://meepachat.bogpad.io/cloud-init.sh)
 ```
@@ -123,6 +123,43 @@ meepachat deps stop      # Stop services
 meepachat deps start     # Restart services
 meepachat deps reset     # Stop and delete all data
 ```
+
+## OpenClaw Integration
+
+Connect [OpenClaw](https://openclaw.com) to MeepaChat so your AI agents can chat in your server channels and DMs.
+
+```bash
+# Install the plugin
+openclaw plugins install meepachat-openclaw
+```
+
+### Setup
+
+1. **Create a bot** in MeepaChat: go to **Server Settings > Bots > Create Bot** and copy the token
+
+2. **Configure OpenClaw** — add to your `config.json5`:
+
+```json5
+{
+  channels: {
+    meepachat: {
+      enabled: true,
+      url: "https://chat.example.com", // your MeepaChat URL
+      token: "bot-uuid.secret-token",  // from step 1
+    },
+  },
+}
+```
+
+3. **Start the gateway:**
+
+```bash
+openclaw gateway start
+```
+
+Your bot will connect via WebSocket and respond to messages in configured channels and DMs.
+
+See the [full plugin docs](https://github.com/bogpad/meepa/tree/main/meepachat/integrations/openclaw) for filtering by server/channel, reconnection settings, and self-hosted TLS configuration.
 
 ## Uninstall
 
