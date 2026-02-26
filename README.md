@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/bogpad/meepachat/main/icon-512.png" width="200" alt="MeepaChat" />
     <br><br>
     <b>Self-hosted team chat.</b><br>
-    Go + React. Deploy anywhere. Own your data.
+    Lightweight. Deploy anywhere. Own your data.
     <br><br>
     <a href="https://github.com/bogpad/meepachat/releases"><img src="https://img.shields.io/github/v/release/bogpad/meepachat?style=flat-square" alt="Latest Release"></a>
     <a href="https://formulae.brew.sh/formula/meepachat"><img src="https://img.shields.io/badge/homebrew-bogpad%2Ftap-orange?style=flat-square" alt="Homebrew"></a>
