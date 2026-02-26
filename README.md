@@ -149,16 +149,20 @@ meepagateway
 On first run, the setup wizard walks you through connecting to MeepaChat:
 
 1. **Create a bot** in MeepaChat: **Server Settings > Bots > Create Bot** and copy the token
-2. **Add the connector** to your `meepa.toml`:
+2. **Add a MeepaChat connector** to your agent in `meepa.toml`:
 
 ```toml
-[[agents.connectors]]
-name = "chat"
-type = "meepachat"
+[[agents]]
+id = "my-agent"
+name = "My Agent"
 
-[agents.connectors.meepachat]
-url = "wss://chat.example.com/api/bot-gateway"
-bot_token = "BOT_ID.BOT_SECRET"
+  [[agents.connectors]]
+  name = "chat"
+  type = "meepachat"
+
+  [agents.connectors.meepachat]
+  url = "wss://chat.example.com/api/bot-gateway"
+  bot_token = "BOT_ID.BOT_SECRET"
 ```
 
 Or configure via the **Captain Dashboard** at `http://localhost:8092`.
