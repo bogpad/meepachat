@@ -134,7 +134,38 @@ meepachat logs           # Show infrastructure logs
 meepachat reset          # Reset infrastructure
 ```
 
-## OpenClaw Integration
+## Integrations
+
+### MeepaGateway
+
+Connect AI agents to MeepaChat using [MeepaGateway](https://github.com/bogpad/meepagateway). Agents can respond in server channels and DMs across MeepaChat, Discord, Slack, Telegram, and WhatsApp — all from a single gateway.
+
+```bash
+# Install MeepaGateway
+curl -fsSL https://meepagateway.bogpad.io/install.sh | sh
+meepagateway
+```
+
+On first run, the setup wizard walks you through connecting to MeepaChat:
+
+1. **Create a bot** in MeepaChat: **Server Settings > Bots > Create Bot** and copy the token
+2. **Add the connector** to your `meepa.toml`:
+
+```toml
+[[agents.connectors]]
+name = "chat"
+type = "meepachat"
+
+[agents.connectors.meepachat]
+url = "wss://chat.example.com/api/bot-gateway"
+bot_token = "BOT_ID.BOT_SECRET"
+```
+
+Or configure via the **Captain Dashboard** at `http://localhost:8092`.
+
+See [MeepaGateway docs](https://github.com/bogpad/meepagateway) for full setup, VPS deployment, and multi-platform configuration.
+
+### OpenClaw
 
 Connect [OpenClaw](https://openclaw.com) to MeepaChat so your AI agents can chat in your server channels and DMs.
 
