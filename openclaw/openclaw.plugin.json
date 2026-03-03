@@ -1,0 +1,11 @@
+{
+  "id": "meepachat-openclaw",
+  "name": "MeepaChat",
+  "channels": ["meepachat"],
+  "description": "Connect to MeepaChat (cloud or self-hosted)",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {}
+  }
+}

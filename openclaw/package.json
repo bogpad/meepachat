@@ -1,0 +1,69 @@
+{
+  "name": "@meepa/meepachat-openclaw",
+  "version": "0.0.6",
+  "description": "OpenClaw channel plugin for MeepaChat",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "openclaw": {
+    "id": "meepachat-openclaw",
+    "extensions": [
+      "./src/index.ts"
+    ],
+    "channel": {
+      "id": "meepachat",
+      "label": "MeepaChat",
+      "selectionLabel": "MeepaChat",
+      "docsPath": "/channels/meepachat",
+      "docsLabel": "meepachat",
+      "blurb": "Connect to MeepaChat via bot tokens.",
+      "order": 70,
+      "aliases": [
+        "meep",
+        "chat"
+      ]
+    },
+    "install": {
+      "npmSpec": "@meepa/meepachat-openclaw",
+      "defaultChoice": "npm"
+    }
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "meepachat",
+    "chat",
+    "messaging"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
