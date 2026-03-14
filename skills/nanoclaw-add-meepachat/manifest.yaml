@@ -1,0 +1,20 @@
+skill: meepachat
+version: 1.0.0
+description: "MeepaChat Bot Gateway integration via WebSocket"
+core_version: 0.1.0
+adds:
+  - src/channels/meepachat.ts
+  - src/channels/meepachat.test.ts
+modifies:
+  - src/index.ts
+  - src/config.ts
+  - src/routing.test.ts
+structured:
+  npm_dependencies:
+    ws: "^8.16.0"
+  env_additions:
+    - MEEPACHAT_BOT_TOKEN
+    - MEEPACHAT_BASE_URL
+conflicts: []
+depends: []
+test: "npx vitest run src/channels/meepachat.test.ts"
