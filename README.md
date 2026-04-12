@@ -1,10 +1,14 @@
 <p align="center">
+    <a href="https://apps.apple.com/us/app/meepachat/id6759942951"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20Now%20on%20the%20App%20Store!-Download%20MeepaChat%20for%20iOS-black?style=for-the-badge&logo=apple&logoColor=white" alt="Now on the App Store!" /></a>
+</p>
+
+<p align="center">
     <img src="https://raw.githubusercontent.com/bogpad/meepachat/main/icon-512.png" width="200" alt="MeepaChat" />
     <br><br>
     <b>Slack and Discord-like Team Chat for Humans and Agents</b><br>
     Self-hosted. Deploy anywhere. Own your data.
     <br>
-    Now on <a href="https://testflight.apple.com/join/xyt5u6nE">iOS</a>, <a href="https://github.com/bogpad/meepachat/releases/latest/download/MeepaChat_0.0.1_aarch64.dmg">macOS</a>, and <a href="https://chat.meepachat.ai">Web</a>.
+    Now on <a href="https://apps.apple.com/us/app/meepachat/id6759942951">iOS</a>, <a href="https://github.com/bogpad/meepachat/releases/latest/download/MeepaChat_0.0.1_aarch64.dmg">macOS</a>, and <a href="https://chat.meepachat.ai">Web</a>.
     <br>
     <a href="https://meepachat.ai">meepachat.ai</a>
     <br><br>
@@ -12,7 +16,7 @@
     <a href="https://formulae.brew.sh/formula/meepachat"><img src="https://img.shields.io/badge/homebrew-bogpad%2Ftap-orange?style=flat-square" alt="Homebrew"></a>
     <a href="https://github.com/bogpad/meepachat"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-blue?style=flat-square" alt="Platform"></a>
     <a href="https://github.com/bogpad/meepachat/releases/latest/download/MeepaChat_0.0.1_aarch64.dmg"><img src="https://img.shields.io/badge/macOS-Download%20DMG-blue?style=flat-square" alt="macOS Download"></a>
-    <a href="https://testflight.apple.com/join/xyt5u6nE"><img src="https://img.shields.io/badge/iOS-TestFlight-blue?style=flat-square" alt="iOS TestFlight"></a>
+    <a href="https://apps.apple.com/us/app/meepachat/id6759942951"><img src="https://img.shields.io/badge/iOS-App%20Store-black?style=flat-square&logo=apple&logoColor=white" alt="iOS App Store"></a>
     <img src="https://img.shields.io/badge/Android-coming%20soon-lightgrey?style=flat-square" alt="Android coming soon">
 </p>
 
@@ -74,7 +78,7 @@ brew install bogpad/tap/meepachat
 
 ## Why MeepaChat
 
-I love Slack. I use it every day. But I needed something self-hosted that felt more integrated and supportive with AI chat. Other self-hosted solutions felt too opinionated, unwieldy to set up, and none of them have a mobile app that feels like Slack or Discord. So I built MeepaChat: lightweight, familiar UX, a native [iOS app](https://testflight.apple.com/join/xyt5u6nE), and designed from the start for easy bot integration through its Bot Gateway WebSocket API.
+I love Slack. I use it every day. But I needed something self-hosted that felt more integrated and supportive with AI chat. Other self-hosted solutions felt too opinionated, unwieldy to set up, and none of them have a mobile app that feels like Slack or Discord. So I built MeepaChat: lightweight, familiar UX, a native [iOS app](https://apps.apple.com/us/app/meepachat/id6759942951), and designed from the start for easy bot integration through its Bot Gateway WebSocket API.
 
 I ended up building my own gateway too, [MeepaGateway](https://github.com/bogpad/meepagateway), to support the kind of agent interactions I wanted: group conversations, dynamic skills, image handling, and encrypted credentials. It also works with [OpenClaw](https://openclaw.com) and any other bot framework.
 
